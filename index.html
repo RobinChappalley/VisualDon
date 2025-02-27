@@ -36,10 +36,47 @@
 
     <h1>Animer des formes</h1>
 
-    <h2>On click</h2>
+    <h2>On click</h2> 
+    <svg width="80" height="30" >
+        <rect x="0" y="0" width="80" height="30" fill="indianred">
+            <animate attributeName="x" from="0" to="80" dur="2s" repeatCount="infinite" />
+            <animate attributeName="x" from="180" to="200" dur="2s" repeatCount="infinite" />
+            <!-- <animate attributeName="y" from="0" to="30" dur="2s" repeatCount="4" /> -->
+        </rect>
+      </svg>
 
     <h2>On hover</h2>
-
+    <svg width="80" height="30">
+        <rect x="0" y="0" width="80" height="30" fill="indianred">
+      </svg>
+<style>
+    svg rect:hover {
+        fill: yellow;
+    }
+    svg path:hover {
+        stroke: yellow;
+    }
+    svg circle:hover {
+        stroke: yellow;
+    }
+    svg line:hover {
+        stroke: yellow;
+    }
+    svg animate[attributeName="x"] {
+        fill: yellow;
+    }
+    svg animate[attributeName="x"]:hover {
+        fill: red;
+    }
+    svg text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        fill: white;
+    }
+    svg text:hover {
+        fill: yellow;
+    }
+</style>
     <h2>
       Prenez la première lettre de votre prénom que vous avez créée ci-dessus.
       Faite bouger une forme de votre choix le long de la lettre
