@@ -52,7 +52,14 @@ thirdCircle.on("click", () => {
 });
 
 const array = [20, 5, 25, 8, 15];
+for (let i = 0; i < array.length; i++) {
+  select("svg")
+    .append("rect")
+    .attr("x", 250 + 30 * i)
+    .attr("y", 500)
+    .attr("width", 20)
+    .attr("height", array[i] * 5)
+    .attr("fill", "orange");
+}
 
-array.forEach((element) => {
-  console.log(element);
-});
+//
