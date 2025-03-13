@@ -1,3 +1,6 @@
 [submodule "comem-visualdon"]
 	path = comem-visualdon
 	url = https://github.com/RobinChappalley/comem-visualdon
+[submodule "visdon-tour-de-france"]
+	path = visdon-tour-de-france
+	url = https://github.com/ctkix98/visdon-tour-de-france
